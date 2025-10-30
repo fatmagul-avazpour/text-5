@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@layer base{
+/* فونت سفارشی Open Sans */
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@font-face {
+  font-family: "breeserifBold";
+  src: url("../public/font/BreeSerif-Regular.ttf");
+  font-display: swap;
+}
+
+}
+@theme{
+  --color-orange-custom:#FE6244;
+  --font-beeSerif: "breeserifBold";
+ 
+}
+
+
+@utility container{
+  @apply px-2 md:px-4 xl:px-8 mx-auto ;
+}
+  @layer components{
+    .bg-home-login{
+      background-image: url("../public/images/Banner/Banner.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-position: center;
+    }
+    .header-scrolled {
+    @apply bg-black/50 backdrop-blur-md shadow-lg;
+  }
+ 
+  }
+@custom-variant child (& > *)

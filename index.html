@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind  -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- favicon -->
+    <link rel="icon" href="/public/images/logos/favicon2.png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- title -->
+<title>tasty Drop (1)</title>
+</head>
+<body class="open-sans">
+    <svg class="hidden">
+        <!-- bar-3 -->
+        <symbol id="bar-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </symbol>
+        <!-- arrow to down -->
+        <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+           <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </symbol>
+        <!-- arrow left to right -->
+         <symbol id="arrow-left-to-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+        </symbol>
+        <!-- user -->
+         <symbol id="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+           <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+         </symbol>
+         <!-- x-mark -->
+        <symbol id="x-mark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </symbol>
+
+
+
+
+
+    </svg>
+    <header class="mainHeader fixed top-0 right-0 left-0 h-[98px] flex items-center z-40 transition-all duration-300">
+        <!-- header-content -->
+       <div class="container flex items-center justify-between">
+        <!-- app logo -->
+         <a href="" class="flex items-center gap-x-0.5 md:gap-x-2">
+            <img src="/public/images/logos/logo.png" class="w-16 md:w-24" alt="">
+            <span class="text-xl md:text-3xl font-beeSerif bg-gradient-to-r from-[#f97316] to-[#ea580c] bg-clip-text text-transparent font-bold">TastyDrop</span>
+         </a>
+         <!-- header menu for mobile -->
+          <div class="menuBarBtn cursor-pointer flex lg:hidden items-center justify-center  w-12 h-12 bg-black/20 rounded-lg ">
+            <svg class="text-white w-9 h-9 md:w-10 md:h-10">
+                <use href="#bar-3"></use>
+            </svg>
+          </div>
+          <!-- narbar hover menu mobile -->
+           <div class="nav fixed left-0 w-64 top-0 bottom-0 h-screen bg-black/90 lg:hidden transition-all ease-in duration-75 z-50">
+                <!-- close header icon -->
+                 <div class="flex cursor-pointer items-center justify-between p-3">
+                  <div></div>
+                  <div class="close-btn-nav">
+                    <svg class="w-6 h-6 text-white ">
+                    <use href="#x-mark"></use>
+                  </svg>
+                  </div>
+                 </div>
+
+              <!-- btns -->
+          <div class="flex  flex-col gap-y-4 capitalize mt-10 px-3 text-sm">
+             
+            <a href="" class="flex items-center justify-center gap-x-2 border  border-white/30 text-white backdrop-blur-[3px] px-5 py-2 rounded-lg " >
+               <span> Partner with us</span>
+               <svg class="w-4 h-4">
+                    <use href="#arrow-down"></use>
+                </svg>
+               
+            </a>
+            <a href="/login.html" target="_blank"  class="flex items-center justify-center gap-x-2 px-5 py-2 rounded-lg transition-all ease-in duration-300 text-white bg-gradient-to-r from-[#f97316] to-[#ea580c] hover:from-[#ea580c] hover:to-[#f97316]">
+                <svg class="w-5 h-5">
+                    <use href="#arrow-left-to-right"></use>
+                </svg>
+                <span>sign up or log in</span>
+                 
+            </a>
+             <a href=""  class="flex items-center justify-center gap-x-2 px-5 py-2 rounded-lg transition-all ease-in duration-300 text-white bg-gradient-to-r from-[#f97316] to-[#ea580c] hover:from-[#ea580c] hover:to-[#f97316]">
+                <svg class="w-5 h-5">
+                    <use href="#user"></use>
+                </svg>
+              <span>account</span>
+            </a>
+           </div>
+           </div>
+          <!-- header for desktp -->
+            <!-- btns -->
+           <div class="hidden lg:flex items-center gap-x-4 capitalize">
+             
+            <a href="" class="flex items-center justify-center gap-x-2 bg-black/40 text-white backdrop-blur-[3px] px-5 py-2 rounded-lg " >
+               <span> Partner with us</span>
+               <svg class="w-4 h-4">
+                    <use href="#arrow-down"></use>
+                </svg>
+               
+            </a>
+            <a href="/login.html" target="_blank"  class="flex items-center gap-x-2 px-5 py-2 rounded-lg transition-all ease-in duration-300 text-white bg-gradient-to-r from-[#f97316] to-[#ea580c] hover:from-[#ea580c] hover:to-[#f97316]">
+                <svg class="w-5 h-5">
+                    <use href="#arrow-left-to-right"></use>
+                </svg>
+                <span>sign up or log in</span>
+                 
+            </a>
+             <a href=""  class="flex items-center gap-x-2 px-5 py-2 rounded-lg transition-all ease-in duration-300 text-white bg-gradient-to-r from-[#f97316] to-[#ea580c] hover:from-[#ea580c] hover:to-[#f97316]">
+                <svg class="w-5 h-5">
+                    <use href="#user"></use>
+                </svg>
+              <span>account</span>
+            </a>
+           </div>
+       </div>
+    </header>
+<main>
+        <!-- section home  banner-->
+        <section class="relative home h-[70vh] md:h-[90vh] before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/40 before:to-black/50">
+  <img src="/public/images/Banner/Banner.jpg" class="w-full h-full object-cover md:object-top" alt="">
+
+  <!-- banner text-box -->
+  <div class="absolute inset-0 flex items-center justify-center text-center text-white px-4">
+    <div class="w-full max-w-[740px]">
+      <h1 class="text-3xl md:text-5xl font-beeSerif leading-tight text-center">
+        Satisfy your cravings with   restaurant-quality <span class="text-orange-custom">food</span>
+      </h1>
+
+      <p class="mt-4 mb-6 text-sm md:text-base">Enter your location to see what we deliver to your area!</p>
+
+      <!-- text-box search -->
+      <form class="flex  justify-center   bg-white rounded-full max-w-[500px] mx-auto">
+        <input type="text" placeholder="Enter your location" class="px-3 py-3 w-full text-black focus:outline-0  placeholder:text-gray-500 placeholder:px-2 placeholder:text-sm md:placeholder:text-base ">
+        <button class="bg-gradient-to-r from-[#f97316] to-[#ea580c] text-white px-5 py-3 rounded-full text-sm md:text-base">Search</button>
+      </form>
+
+      <span class="block mt-4">
+        <a href="#" class="bg-gradient-to-t from-[#f97316] to-[#ea580c]  bg-clip-text text-transparent font-bold  ">Login</a> for your recent addresses.
+      </span>
+    </div>
+  </div>
+         </section>
+        <!-- section cards -->
+        <section class="my-20">
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div>
+              <img src="/public/images/Category Card/team.jpg" alt="" class="rounded-lg">
+              <p class="line-clamp-3 my-2">A dynamic and inclusive workplace, where you will have the freedom to create your own journey. Find your next adventure in Tasty Drop.</p>
+               <a href="" class="inline-block bg-gradient-to-r from-[#f97316] to-[#ea580c] px-3 py-2 text-white rounded-3xl my-2">Business Partner !</a>
+            </div>
+            <div>
+              <img src="/public/images/Category Card/restaurant.jpg" alt="" class="rounded-lg">
+              <p class="line-clamp-3 my-2">Grow your business while focusing on what you want to: making delicious food. Team up with Tasty Drop and tap into a fresh audience.</p>
+               <a href=""  class="inline-block bg-gradient-to-r from-[#f97316] to-[#ea580c] px-3 py-2 text-white rounded-3xl my-2">Partner with us !</a>
+            </div>
+            <div>
+              <img src="/public/images/Category Card/delivery-man.jpg" alt="" class="rounded-lg">
+              <p class="line-clamp-3 my-2">Join the rider community. We enable the freedom to pursue your dreams and passions, providing the flexibility and means to make it happen.</p>
+               <a href=""  class="inline-block bg-gradient-to-r from-[#f97316] to-[#ea580c] px-3 py-2 text-white rounded-3xl my-2">Ride with us !</a>
+            </div>
+
+          </div>
+        </div>
+        </section>
+
+    </main>
+    <script src="/public/js/app.js"></script>
+</body>
+</html>

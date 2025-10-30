@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind  -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- favicon -->
+    <link rel="icon" href="/public/images/logos/favicon2.png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- title -->
+<title>tasty Drop (login)</title>
+</head>
+<body class="open-sans">
+    
+<!-- login form -->
+
+<div class=" bg-home-login flex   items-start justify-center flex-col relative before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50">
+  <!-- login form -->
+  <form action="" class="container backdrop-blur-[36px] p-8   rounded-3xl max-w-[500px] border border-white/30">
+    <h2 class="bg-gradient-to-t from-[#f97316] to-[#ea580c]  bg-clip-text text-transparent font-bold text-2xl md:text-5xl py-3 border text-center border-white/20 rounded-md uppercase">login</h2>
+       <!-- password & username input -->
+    <div class="flex flex-col  gap-y-2 mt-10">
+      <!-- username input -->
+       <div class="flex flex-col gap-2 ">
+        <label for="userName" class="text-white capitalize text-base md:text-lg tracking-wider">user name *</label>
+        <input type="text" id="userName" class="focus:outline-0 bg-black/20 border border-white/30 rounded-lg py-1.5  placeholder:text-xs md:placeholder:text-sm placeholder:text-gray-300 placeholder:capitalize placeholder:px-2 " placeholder="enter your userName">
+       </div>
+       <!-- password input -->
+        <div class="flex flex-col gap-2 ">
+        <label for="password" class="text-white capitalize text-base md:text-lg tracking-wider">password *</label>
+        <input type="text" id="password" class="focus:outline-0 bg-black/20 border border-white/30 py-1.5 rounded-lg  placeholder:text-xs md:placeholder:text-sm placeholder:text-gray-300 placeholder:capitalize placeholder:px-2 placeholder:text-sm" placeholder="enter your password">
+       </div>
+    </div>
+ <!-- remember me btn -->
+  <div class="flex items-center gap-2">
+    <span class="text-white text-sm my-2">remember me</span>
+    <input type="checkbox" name="" id="">
+  </div>
+  <!-- login btn -->
+  <div class="flex items-center justify-center px-3 py-2 text-xl md:text-3xl cursor-pointer  bg-gradient-to-t from-[#f97316] to-[#ea580c] text-white rounded-lg">
+     <input type="submit" value="Login">
+  </div>
+  <!-- forget password or dont have account -->
+   <div class="flex flex-col text-gray-500 capitalize gap-1 mt-2 text-sm md:text-base">
+    <a href="">forget password??</a>
+    <a href="">dont have an account?</a>
+   </div>
+
+
+
+  </form>
+</div>
+  
+    <script src="/public/js/app.js"></script>
+</body>
+</html>
